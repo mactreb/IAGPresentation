@@ -1,0 +1,212 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+/**********************/
+/* CORE COLOUR SCHEME
+/*********************/
+$primary: #163856;
+$primaryHalf: #5393CA;
+
+$secondary: rgb(239, 71, 111);
+$secondaryHalf: rgba(239, 71, 111, 0.5);
+
+$tertiary: rgba(6, 188, 193);
+$tertiaryHalf: rgba(6, 188, 193, 0.50);
+
+$quaternary: rgb(255, 209, 102);
+$quaternaryHalf: rgba(255, 209, 102, 0.50);
+
+$quinary: rgb(0, 168, 150);
+$quinaryHalf: rgba(0, 168, 150, 0.50);
+
+$senary: rgb(255, 111, 89);
+$senaryHalf: #FF6F59;
+
+$lightest: white;
+$darkest: #2a2a2a;
+
+/*****************************/
+/* SPECIFIC ELEMENT COLOURS
+/*****************************/
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+// Background
+$backgroundLight: $lightest;
+$backgroundDark: $primary;
+$backgroundColor: $backgroundDark;
+
+
+//Cover
+$coverBackgroundColor: $backgroundDark;
+$coverH1Color: $lightest;
+$coverH2Color: $secondary;
+$coverH3Color: $tertiary;
+$coverH4Color: $secondaryHalf;
+
+//Headings
+$headingBackgroundColor: rgba(22, 56, 86, 0.7);
+
+//Body Text
+$mainColor: $primary;
+
+//Text Fade Gradients
+$lightenTextTop: $lightest;
+$lightenTextBottom: $primary;
+
+// Highlight Text
+$highlightTextBackground: $secondaryHalf;
+$highlightTextForeground: $primary;
+$highlightTextSecondaryBackground: $quaternary;
+$highlightTextSecondaryForeground: $primary;
+
+// Drop Shadow
+$dropShadow: rgb(22, 56, 86, 0.6);
+$dropShadowBlur: 3px;
+
+// Header
+$headerBackgroundColor: $secondary;
+$headerFontColor: $primary;
+
+//Footer
+$footerBackgroundColor: $secondary;
+$footerFontColor: $primary;
+
+/*********************/
+/*  TEXT FORMATTING
+/*********************/
+
+// Global
+$mainFontSize: 42px;
+$mainFont: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$mainFontWeight: 300;
+
+$headingFont: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$headingTextShadow: none;
+$headingLineHeight: 100px;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+
+$headerFont: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$footerFont: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+// H1
+$heading1Margin: 0px;
+$heading1Size: 1.5em;
+$heading1Color: $primary;
+$heading1ColorLight: $lightest;
+$heading1Align: left;
+$heading1TextShadow: none;
+$heading1FontWeight: 600;
+$heading1LineHeight: 100px;
+
+// H2
+$heading2Margin: 0px;
+$heading2Size: 1.0em;
+$heading2Color: $secondary;
+$heading2ColorLight: $lightest;
+$heading2Align: left;
+$heading2TextShadow: none;
+$heading2FontWeight: 600;
+$heading2LineHeight: 100px;
+
+// H3
+$heading3Margin: 0px;
+$heading3Size: 1.0em;
+$heading3Color: $tertiary;
+$heading3ColorLight: $lightest;
+$heading3Align: left;
+$heading3TextShadow: none;
+$heading3FontWeight: 400;
+$heading3LineHeight: 50px;
+
+// H4
+$heading4Margin: 0px;
+$heading4Size: 1.0em;
+$heading4Color: $primaryHalf;
+$heading4ColorLight: $lightest;
+$heading4Align: left;
+$heading4TextShadow: none;
+$heading4FontWeight: 600;
+$heading4LineHeight: 100px;
+
+// H5
+$heading5Margin: 0px;
+$heading5Size: 1.0em;
+$heading5Color: $primaryHalf;
+$heading5ColorLight: $lightest;
+$heading5Align: left;
+$heading5TextShadow: none;
+$heading5FontWeight: 600;
+$heading5LineHeight: 100px;
+
+// H6
+$heading6Margin: 0px;
+$heading6Size: 1.0em;
+$heading6Color: $primaryHalf;
+$heading6ColorLight: $lightest;
+$heading6Align: left;
+$heading6TextShadow: none;
+$heading6FontWeight: 600;
+$heading6LineHeight: 100px;
+
+// Paragraph
+$pMargin: 0px;
+$pSize: 1.0em;
+$pColor: $primary;
+$pColorLight: $primary;
+$pAlign: left;
+
+// Hyperlinks
+$linkColor: $primaryHalf;
+$linkColorDark: darken($linkColor , 15%);
+$linkColorHover: $senaryHalf;
+
+// Selection
+$selectionBackgroundColor: $senary;
+$selectionColor: $primary;
+
+// List Items
+$l1color: $mainColor;
+$l1BulletColor: $quinary;
+$l2color: $mainColor;
+$l2BulletColor: $tertiary;
+$l3color: $mainColor;
+$l3BulletColor: $quaternary;
+
+// Citation
+$citationColor: lighten($mainColor, 20%);
+
+// Block Quotes
+$blockQuoteMargin: 5px;
+$blockQuoteBorder: $primaryHalf;
+$blockQuoteShadow: $secondary;
+
+// HELPERS
+$slideBoundary: transparent;
+
+/*************/
+/*  IMAGES
+/*************/
+$imageSize: 75%;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

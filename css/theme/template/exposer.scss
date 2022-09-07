@@ -1,0 +1,191 @@
+// Exposes theme's variables for easy re-use in CSS for plugin authors
+
+:root {
+
+  /**********************/
+/* CORE COLOUR SCHEME
+/*********************/
+  --r-primary: #{$primary};
+  --r-primary-half: #{$primaryHalf};
+
+  --r-secondary: #{$secondary};
+  --r-secondary-half: #{$secondaryHalf};
+
+  --r-tertiary: #{$tertiary};
+  --r-tertiary-half: #{$tertiaryHalf};
+
+  --r-quaternary: #{$quaternary};
+  --r-quaternary-half: #{$quaternaryHalf};
+
+  --r-quinary: #{$quinary};
+  --r-quinary-half: #{$quinaryHalf};
+
+  --r-senary: #{$senary};
+  --r-senary-half: #{$senaryHalf};
+
+/*****************************/
+/* SPECIFIC ELEMENT COLOURS
+/*****************************/
+// Global
+--r-background-color: #{$backgroundColor};
+
+// Background
+  --r-background-light: #{$backgroundLight};
+  --r-background-dark: #{$backgroundDark};
+
+// Cover
+  --r-cover-background-color: #{$coverBackgroundColor};
+  --r-cover-h1-color: #{$coverH1Color};
+  --r-cover-h2-color: #{$coverH2Color};
+  --r-cover-h3-color: #{$coverH3Color};
+  --r-cover-h4-color: #{$coverH4Color};
+
+// Headings
+--r-heading-background-color: #{$headingBackgroundColor};
+
+// Body Text
+--r-main-color: #{$mainColor};
+
+//Text Fade Gradients
+--r-lighten-text-top: #{$lightenTextTop};
+--r-lighten-text-bottom: #{$lightenTextBottom};
+
+// Highlight Text
+--r-highlight-text-background: #{$highlightTextBackground};
+--r-highlight-text-foreground: #{$highlightTextForeground};
+--r-highlight-text-secondary-background: #{$highlightTextSecondaryBackground};
+--r-highlight-text-secondary-foreground: #{$highlightTextSecondaryForeground};
+
+// Dropshadow
+--r-drop-shadow: #{$dropShadow};
+--r-drop-shadow-blur: #{$dropShadowBlur};
+
+// Header
+--r-header-background-color: #{$headerBackgroundColor};
+--r-header-font-color: #{$headerFontColor};
+
+// Footer
+--r-footer-background-color: #{$footerBackgroundColor};
+--r-footer-font-color: #{$footerFontColor};
+
+/*********************/
+/*  TEXT FORMATTING
+/*********************/
+
+// Global
+--r-main-font: #{$mainFont};
+--r-main-font-size: #{$mainFontSize};
+--r-main-font-weight: #{$mainFontWeight};
+
+--r-heading-font: #{$headingFont};
+--r-heading-text-shadow: #{$headingTextShadow};
+--r-heading-line-height: #{$headingLineHeight};
+--r-heading-letter-spacing: #{$headingLetterSpacing};
+--r-heading-text-transform: #{$headingTextTransform};
+--r-heading-font-weight: #{$headingFontWeight};
+
+--r-header-font: #{$headerFont};
+--r-footer-font: #{$footerFont};
+
+// Headings
+--r-heading2-margin: #{$heading2Margin};
+--r-heading3-margin: #{$heading3Margin};
+--r-heading4-margin: #{$heading4Margin};
+--r-heading5-margin: #{$heading5Margin};
+--r-heading6-margin: #{$heading6Margin};
+
+--r-heading1-size: #{$heading1Size};
+--r-heading2-size: #{$heading2Size};
+--r-heading3-size: #{$heading3Size};
+--r-heading4-size: #{$heading4Size};
+--r-heading5-size: #{$heading5Size};
+--r-heading6-size: #{$heading6Size};
+
+--r-heading1-color: #{$heading1Color};
+--r-heading1-color-light: #{$heading1ColorLight};
+--r-heading2-color: #{$heading2Color};
+--r-heading2-color-light: #{$heading2ColorLight};
+--r-heading3-color: #{$heading3Color};
+--r-heading3-color-light: #{$heading3ColorLight};
+--r-heading4-color: #{$heading4Color};
+--r-heading4-color-light: #{$heading4ColorLight};
+--r-heading5-color: #{$heading5Color};
+--r-heading5-color-light: #{$heading5ColorLight};
+--r-heading6-color: #{$heading6Color};
+--r-heading6-color-light: #{$heading6ColorLight};
+
+--r-heading1-align: #{$heading1Align};
+--r-heading2-align: #{$heading2Align};
+--r-heading3-align: #{$heading3Align};
+--r-heading4-align: #{$heading4Align};
+--r-heading5-align: #{$heading5Align};
+--r-heading6-align: #{$heading6Align};
+
+--r-heading1-text-shadow: #{$heading1TextShadow};
+--r-heading2-text-shadow: #{$heading2TextShadow};
+--r-heading3-text-shadow: #{$heading3TextShadow};
+--r-heading4-text-shadow: #{$heading4TextShadow};
+--r-heading5-text-shadow: #{$heading5TextShadow};
+--r-heading6-text-shadow: #{$heading6TextShadow};
+
+--r-heading1-font-weight: #{$heading1FontWeight};
+--r-heading2-font-weight: #{$heading2FontWeight};
+--r-heading3-font-weight: #{$heading3FontWeight};
+--r-heading4-font-weight: #{$heading4FontWeight};
+--r-heading5-font-weight: #{$heading5FontWeight};
+--r-heading6-font-weight: #{$heading6FontWeight};
+
+--r-heading1-line-height: #{$heading1LineHeight};
+--r-heading2-line-height: #{$heading2LineHeight};
+--r-heading3-line-height: #{$heading3LineHeight};
+--r-heading4-line-height: #{$heading4LineHeight};
+--r-heading5-line-height: #{$heading5LineHeight};
+--r-heading6-line-height: #{$heading6LineHeight};
+
+// Paragraph
+--r-p-margin: #{$pMargin};
+--r-p-align: #{$pAlign};
+--r-p-size: #{$pSize};
+--r-p-color: #{$pColor};
+--r-p-color-light: #{$pColorLight};
+
+// Hyperlinks
+--r-link-color: #{$linkColor};
+--r-link-color-dark: #{$linkColorDark};
+--r-link-color-hover: #{$linkColorHover};
+
+// Selection
+--r-selection-background-color: #{$selectionBackgroundColor};
+--r-selection-color: #{$selectionColor};
+
+// List Items
+--r-l1-color: #{$l1color};
+--r-l1-bullet-color: #{$l1BulletColor};
+--r-l2-color: #{$l2color};
+--r-l2-bullet-color: #{$l2BulletColor};
+--r-l3-color: #{$l3color};
+--r-l3-bullet-color: #{$l3BulletColor};
+
+// Citations
+--r-citation-color: #{$citationColor};
+
+// Block Quotes
+--r-block-quote-margin: #{$blockQuoteMargin};
+--r-block-quote-border: #{$blockQuoteBorder};
+--r-block-quote-shadow: #{$blockQuoteShadow};
+
+// HELPERS
+  --r-slide-boundary: #{$slideBoundary};
+
+
+// IMAGES
+  --r-image-size: #{$imageSize};
+
+/// PROABLY NOT USED
+
+--r-block-margin: #{$blockMargin};
+--r-heading-margin: #{$headingMargin};
+--r-code-font: #{$codeFont};
+
+
+}
